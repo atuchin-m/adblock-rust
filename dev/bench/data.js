@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737661965167,
+  "lastUpdate": 1737662150926,
   "repoUrl": "https://github.com/atuchin-m/adblock-rust",
   "entries": {
     "Rust Benchmark": [
@@ -207,6 +207,32 @@ window.BENCHMARK_DATA = {
             "name": "rule-match/easylist",
             "value": 1829134496,
             "range": "± 6694393",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "atuchin-m",
+            "username": "atuchin-m"
+          },
+          "committer": {
+            "name": "atuchin-m",
+            "username": "atuchin-m"
+          },
+          "id": "9c0d1cbba3d3e777aa99098bae4015d87e0987b4",
+          "message": "[benchmark] setup perf actions",
+          "timestamp": "2025-01-23T17:04:21Z",
+          "url": "https://github.com/atuchin-m/adblock-rust/pull/1/commits/9c0d1cbba3d3e777aa99098bae4015d87e0987b4"
+        },
+        "date": 1737662150223,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "rule-match/easylist",
+            "value": 1811764771,
+            "range": "± 12130646",
             "unit": "ns/iter"
           }
         ]

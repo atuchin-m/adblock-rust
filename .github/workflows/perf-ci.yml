@@ -38,12 +38,13 @@ jobs:
         run: cargo bench --bench bench_memory -- --output-format bencher | tee -a output.txt
 
       - name: Store benchmark result
-        uses: benchmark-action/github-action-benchmark@v1.20.4
+        uses: benchmark-action/github-action-benchmark@6bae118c112083251560ad8b3a1ff2e43aa23351
         with:
           name: Rust Benchmark
           tool: 'cargo'
           output-file-path: output.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: true
           alert-threshold: '130%' # fails on +30% regression
           comment-on-alert: true
           fail-on-alert: true

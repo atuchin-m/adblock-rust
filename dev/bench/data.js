@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737746805265,
+  "lastUpdate": 1738090779890,
   "repoUrl": "https://github.com/atuchin-m/adblock-rust",
   "entries": {
     "Rust Benchmark": [
@@ -396,6 +396,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "memory-usage/brave-list-after-1000-requests",
             "value": 47311462,
+            "range": "± 3",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matuchin@brave.com",
+            "name": "Mikhail",
+            "username": "atuchin-m"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6d66c9a6789641e304130def513abe4207d8faa0",
+          "message": "Merge pull request #2 from atuchin-m/setup-basic-perf-ci-follow-up\n\nSetup basic perf ci follow up",
+          "timestamp": "2025-01-28T22:56:12+04:00",
+          "tree_id": "d2cb1c33575a3395abd7e7e0afe793fc18ec1f11",
+          "url": "https://github.com/atuchin-m/adblock-rust/commit/6d66c9a6789641e304130def513abe4207d8faa0"
+        },
+        "date": 1738090779370,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "rule-match-browserlike/brave-list",
+            "value": 1733372186,
+            "range": "± 13838996",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "rule-match-first-request/brave-list",
+            "value": 1002293,
+            "range": "± 8771",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "blocker_new/brave-list",
+            "value": 198867080,
+            "range": "± 1495716",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "memory-usage/brave-list-initial",
+            "value": 41409969,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "memory-usage/brave-list-after-1000-requests",
+            "value": 44005995,
             "range": "± 3",
             "unit": "ns/iter"
           }
